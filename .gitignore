@@ -1,0 +1,24 @@
+# Specifies intentionally untracked files to ignore when using Git
+# http://git-scm.com/docs/gitignore
+
+node_modules/
+
+bower_components/
+
+platforms/
+
+plugins/
+
+dist/
+
+.idea/workspace.xml
+.DS_Store
+.idea
+ionic.config.json
+
+# exclude everything
+www/lib/*
+ionic.config.json
+www/.DS_Store
+.history/
+yarn-error.log
