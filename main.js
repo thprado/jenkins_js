@@ -1,1 +1,1 @@
-console.log('prueba');
+var everJs = jQuery.noConflict();
