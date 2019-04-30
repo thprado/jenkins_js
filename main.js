@@ -16,7 +16,7 @@ umaneJs(document).ready(function(){
 
 var head  = document.getElementsByTagName('head')[0];
 var link  = document.createElement('link');
-link.id   = cssId;
+link.id   = 'umane-css';
 link.rel  = 'stylesheet';
 link.type = 'text/css';
 link.href = 'https://gitcdn.link/repo/thprado/jenkins_css/v1.0/jenkins.css?v=' + Date.now();
