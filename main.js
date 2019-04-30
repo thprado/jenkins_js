@@ -1,14 +1,24 @@
-var everJs = jQuery.noConflict();
+var umaneJs = jQuery.noConflict();
 
 function editMultiBranchPipelineDiv() {
-	if (everJs("#description").next().find("h1").length > 0){
-		if (everJs("#description").next().find("h1").text() === "This folder is empty") {
-			everJs("#description").next().find("div").addClass('noBackground');
+	if (umaneJs("#description").next().find("h1").length > 0){
+		if (umaneJs("#description").next().find("h1").text() === "This folder is empty") {
+			umaneJs("#description").next().find("div").addClass('noBackground');
 		}
 	}
 }
 
-everJs(document).ready(function(){
-	console.log('Its running');
+umaneJs(document).ready(function(){
 	editMultiBranchPipelineDiv();
 });
+
+
+
+var head  = document.getElementsByTagName('head')[0];
+var link  = document.createElement('link');
+link.id   = cssId;
+link.rel  = 'stylesheet';
+link.type = 'text/css';
+link.href = 'https://gitcdn.link/repo/thprado/jenkins_css/v1.0/jenkins.css?v=' + Date.now();
+link.media = 'all';
+head.appendChild(link);
